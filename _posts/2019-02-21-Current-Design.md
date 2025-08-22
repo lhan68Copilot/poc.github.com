@@ -276,7 +276,7 @@ Cube.
     WPI-->>Duck Creek: Good
     Duck Creek->>WPI: PostIssuance notification
     WPI->>Cube: getExtraIssueInfo
-    WPI-->WPI: merge EII into Duck Session
+    WPI-->>WPI: merge EII into Duck Session
     WPI->>XACT Connect: issuance
     XACT Connect->>EAM: CXML
     EAM->>Cube: updateMessageStatus
